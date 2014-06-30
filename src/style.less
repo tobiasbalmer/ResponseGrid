@@ -55,14 +55,14 @@
     .pull-11 { right:91.489361702124% + 2.127659574468%; }
     .pull-12 { right:100%; }
     
-    [class^="col-"] {
+    [class*="col-"] {
         position:relative;
         float:left;
         margin-left:2.127659574468%;
         background:#ccc; /*** development ***/
     }
     
-    [class^="col-"] { 
+    [class*="col-"] { 
         &:first-child { margin-left:auto; }
     }
 
@@ -75,11 +75,17 @@
 @media only screen and (max-width: 480px) {
     
     .response-grid {
-        [class^="col-"] {
+        [class*="col-"] {
             float:none;
             margin:auto auto 20px auto;
             width:100%;
-        }    
+        }  
+        [class*="push-"] {
+            left:auto;
+        }
+        [class*="pull-"] {
+            right:auto;
+        }
     }
     
 }
