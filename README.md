@@ -13,3 +13,12 @@ This grid is based on 12 columns. Inside a div with the class row, there are the
     <div class="col-6"></div>
 </div>
 ```
+
+to produce more space between the columns, or to change the visible position there are push and pulls.
+
+```bash
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-7 push-1"></div>
+</div>
+```
