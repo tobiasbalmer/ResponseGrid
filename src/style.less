@@ -9,7 +9,7 @@
 
 .response-grid {
     .row {
-        margin-bottom:20px;
+        margin-bottom:20px;    
         
         &:after {
             content:'';
@@ -61,6 +61,7 @@
     [class*="col-"] {
         position:relative;
         float:left;
+        margin-bottom:20px;
         margin-left:2.127659574468%;
         background:#ccc; /*** development ***/
     }
@@ -72,7 +73,20 @@
 }
 
 @media only screen and (max-width: @tablet-break) and (min-width: (@phone-break + 1)) {
-    //test
+
+    .response-grid {
+        .reorder {
+            
+            .col-3 { width:48.936170212764%; }
+            .col-3:nth-child(odd) { margin-left:auto; }             
+            
+            .col-4 { width:48.936170212764%; }
+            .col-4:nth-child(odd) { margin-left:auto; }  
+            
+            
+        }
+    }
+    
 }
 
 @media only screen and (max-width: @phone-break) {
