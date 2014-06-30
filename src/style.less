@@ -4,6 +4,9 @@
 /*                                    */
 /**************************************/
 
+@tablet-break:768px;
+@phone-break:480px;
+
 .response-grid {
     .row {
         margin-bottom:20px;
@@ -68,11 +71,11 @@
 
 }
 
-@media only screen and (max-width: 768px) and (min-width: 481px) {
-    
+@media only screen and (max-width: @tablet-break) and (min-width: (@phone-break + 1)) {
+    //test
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: @phone-break) {
     
     .response-grid {
         [class*="col-"] {
