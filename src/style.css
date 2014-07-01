@@ -14,110 +14,109 @@
   clear: both;
 }
 .response-grid .col-1 {
-  width: 6.382978723404%;
+  width: 6.25%;
 }
 .response-grid .col-2 {
-  width: 14.893617021276%;
+  width: 14.58333333%;
 }
 .response-grid .col-3 {
-  width: 23.404255319148%;
+  width: 22.91666667%;
 }
 .response-grid .col-4 {
-  width: 31.91489361702%;
+  width: 31.25%;
 }
 .response-grid .col-5 {
-  width: 40.425531914892%;
+  width: 39.58333333%;
 }
 .response-grid .col-6 {
-  width: 48.936170212764%;
+  width: 47.91666667%;
 }
 .response-grid .col-7 {
-  width: 57.446808510636%;
+  width: 56.25%;
 }
 .response-grid .col-8 {
-  width: 65.957446808508%;
+  width: 64.58333333%;
 }
 .response-grid .col-9 {
-  width: 74.46808510638%;
+  width: 72.91666667%;
 }
 .response-grid .col-10 {
-  width: 82.978723404252% ;
+  width: 81.25%;
 }
 .response-grid .col-11 {
-  width: 91.489361702124%;
+  width: 89.58333333%;
 }
 .response-grid .col-12 {
-  width: 100%;
-  margin-left: auto;
+  width: 97.91666667%;
 }
 .response-grid .push-1 {
-  left: 8.5106383%;
+  left: 8.33333333%;
 }
 .response-grid .push-2 {
-  left: 17.0212766%;
+  left: 16.66666667%;
 }
 .response-grid .push-3 {
-  left: 25.53191489%;
+  left: 25%;
 }
 .response-grid .push-4 {
-  left: 34.04255319%;
+  left: 33.33333333%;
 }
 .response-grid .push-5 {
-  left: 42.55319149%;
+  left: 41.66666667%;
 }
 .response-grid .push-6 {
-  left: 51.06382979%;
+  left: 50%;
 }
 .response-grid .push-7 {
-  left: 59.57446809%;
+  left: 58.33333333%;
 }
 .response-grid .push-8 {
-  left: 68.08510638%;
+  left: 66.66666667%;
 }
 .response-grid .push-9 {
-  left: 76.59574468%;
+  left: 75%;
 }
 .response-grid .push-10 {
-  left: 85.10638298%;
+  left: 83.33333333%;
 }
 .response-grid .push-11 {
-  left: 93.61702128%;
+  left: 91.66666667%;
 }
 .response-grid .push-12 {
   left: 100%;
 }
 .response-grid .pull-1 {
-  right: 8.5106383%;
+  right: 8.33333333%;
 }
 .response-grid .pull-2 {
-  right: 17.0212766%;
+  right: 16.66666667%;
 }
 .response-grid .pull-3 {
-  right: 25.53191489%;
+  right: 25%;
 }
 .response-grid .pull-4 {
-  right: 34.04255319%;
+  right: 33.33333333%;
 }
 .response-grid .pull-5 {
-  right: 42.55319149%;
+  right: 41.66666667%;
 }
 .response-grid .pull-6 {
-  right: 51.06382979%;
+  right: 50%;
 }
 .response-grid .pull-7 {
-  right: 59.57446809%;
+  right: 58.33333333%;
 }
 .response-grid .pull-8 {
-  right: 68.08510638%;
+  right: 66.66666667%;
 }
 .response-grid .pull-9 {
-  right: 76.59574468%;
+  right: 75%;
 }
 .response-grid .pull-10 {
-  right: 85.10638298%;
+  right: 83.33333333%;
 }
 .response-grid .pull-11 {
-  right: 93.61702128%;
+  right: 91.66666667%;
 }
 .response-grid .pull-12 {
   right: 100%;
@@ -125,33 +124,52 @@
 .response-grid [class*="col-"] {
   position: relative;
   float: left;
-  margin-bottom: 20px;
-  margin-left: 2.127659574468%;
-  background: #ccc;
-  /*** development ***/
-}
-.response-grid [class*="col-"]:first-child {
-  margin-left: auto;
+  margin: auto 1.04166667% 20px 1.04166667%;
 }
 @media only screen and (max-width: 768px) and (min-width: 481px) {
-  .response-grid .reorder .col-3 {
-    width: 48.936170212764%;
+  .response-grid .reorder .col-1 {
+    width: 14.58333333%;
   }
-  .response-grid .reorder .col-3:nth-child(odd) {
-    margin-left: auto;
+  .response-grid .reorder .col-2 {
+    width: 31.25%;
   }
+  .response-grid .reorder .col-3,
   .response-grid .reorder .col-4 {
-    width: 48.936170212764%;
+    width: 47.91666667%;
   }
-  .response-grid .reorder .col-4:nth-child(odd) {
-    margin-left: auto;
+  .response-grid .block .col-1,
+  .response-grid .block .col-2,
+  .response-grid .block .col-3,
+  .response-grid .block .col-4,
+  .response-grid .block .col-5,
+  .response-grid .block .col-6,
+  .response-grid .block .col-7,
+  .response-grid .block .col-8,
+  .response-grid .block .col-9,
+  .response-grid .block .col-10,
+  .response-grid .block .col-11 {
+    width: 97.91666667%;
+  }
+  .response-grid .block [class*="push-"] {
+    left: auto;
+  }
+  .response-grid .block [class*="pull-"] {
+    right: auto;
   }
 }
 @media only screen and (max-width: 480px) {
-  .response-grid [class*="col-"] {
-    float: none;
-    margin: auto auto 20px auto;
-    width: 100%;
+  .response-grid .col-1,
+  .response-grid .col-2,
+  .response-grid .col-3,
+  .response-grid .col-4,
+  .response-grid .col-5,
+  .response-grid .col-6,
+  .response-grid .col-7,
+  .response-grid .col-8,
+  .response-grid .col-9,
+  .response-grid .col-10,
+  .response-grid .col-11 {
+    width: 97.91666667%;
   }
   .response-grid [class*="push-"] {
     left: auto;

@@ -5,12 +5,18 @@
         <meta charset="UTF-8">
         <title>ResponseGrid</title>
 
+        <link rel="stylesheet" type="text/css" href="reset.css">        
         <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            [class*="col-"] {
+                background:#ccc; /*** development ***/
+            }        
+        </style>
     </head>
 
     <body>
         
-        <div class="response-grid" style="max-width:1200px; width:100%; margin:20px auto;">
+        <div class="response-grid" style="max-width:1200px; width:100%; margin:20px auto; background:#555;">
             
             <div class="row">
                 <div class="col-12"><h2>Grid</h2></div>
@@ -18,30 +24,37 @@
             
             <div class="row">
                 <div class="col-12">1</div>
+                <div class="col-12">1</div>
             </div>
             
-            <div class="row">
+            <div class="row block">
                 <div class="col-6">1/2</div>
                 <div class="col-6">1/2</div>
-            </div>
-            
-            <div class="row">
-                <div class="col-12">2/2</div>
+                <div class="col-6">1/2</div>
+                <div class="col-6">1/2</div>
             </div>
             
             <div class="row reorder">
                 <div class="col-4">1/3</div>
                 <div class="col-4">1/3</div>
                 <div class="col-4">1/3</div>
-            </div>
-            
-            <div class="row">
                 <div class="col-4">1/3</div>
                 <div class="col-4">1/3</div>
                 <div class="col-4">1/3</div>
             </div>
             
             <div class="row">
+                <div class="col-4">1/3</div>
+                <div class="col-4">1/3</div>
+                <div class="col-4">1/3</div>
+                <div class="col-4">1/3</div>
+                <div class="col-4">1/3</div>
+                <div class="col-4">1/3</div>
+            </div>
+            
+            <div class="row">
+                <div class="col-4">1/3</div>
+                <div class="col-8">2/3</div>
                 <div class="col-4">1/3</div>
                 <div class="col-8">2/3</div>
             </div>
@@ -58,9 +71,29 @@
                 <div class="col-3">1/4</div>
                 <div class="col-3">1/4</div>
                 <div class="col-3">1/4</div>
+                <div class="col-3">1/4</div>
+                <div class="col-3">1/4</div>
+                <div class="col-3">1/4</div>
+                <div class="col-3">1/4</div>
             </div>
             
-            <div class="row">
+            <div class="row reorder">
+                <div class="col-2">1/6</div>
+                <div class="col-2">1/6</div>
+                <div class="col-2">1/6</div>
+                <div class="col-2">1/6</div>
+                <div class="col-2">1/6</div>
+                <div class="col-2">1/6</div>
+                <div class="col-2">1/6</div>
+                <div class="col-2">1/6</div>
+                <div class="col-2">1/6</div>
+                <div class="col-2">1/6</div>
+                <div class="col-2">1/6</div>
+                <div class="col-2">1/6</div>
+            </div>            
+            
+            
+            <div class="row reorder">
                 <div class="col-2">1/6</div>
                 <div class="col-2">1/6</div>
                 <div class="col-2">1/6</div>
@@ -72,8 +105,15 @@
                 <div class="col-2">1/12</div>
                 <div class="col-10">5/12</div>
             </div>
-            
+        
             <div class="row">
+                <div class="col-1">1/12</div>
+                <div class="col-11">11/12</div>
+                <div class="col-1">1/12</div>
+                <div class="col-11">11/12</div>
+            </div>
+            
+            <div class="row reorder">
                 <div class="col-1">1/12</div>
                 <div class="col-1">1/12</div>
                 <div class="col-1">1/12</div>
