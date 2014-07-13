@@ -26,11 +26,11 @@ to produce more space between the columns, or to change the visible position the
 For the tablet, there are 3 options. 
 
 - Without changes, the cols just shrink. 
-- With the class .reorder on the row div, the cols 1/3 become 1/2, the 1/4 also 1/2, the 1/6 to 1/3 and the 1/12 to 1/6.
+- With the class .middle-reorder on the row div, the cols 1/3 become 1/2, the 1/4 also 1/2, the 1/6 to 1/3 and the 1/12 to 1/6.
 - With the class .block, all cols become 100%.
 
 ```bash
-<div class="row reorder">
+<div class="row middle-reorder">
     <div class="col-3"></div>
     <div class="col-3"></div>
     <div class="col-3"></div>
@@ -45,4 +45,22 @@ For the tablet, there are 3 options.
 </div>
 ```
 
-On the smartphone, all the cols become 100%. 
+On the smartphone, all the cols become 100%. But it's also possible to make the cols reorder, or even stay at the original width.
+
+```bash
+<div class="row small-reorder">
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+</div>
+```
+
+```bash
+<div class="row small-stay">
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+</div>
+```
