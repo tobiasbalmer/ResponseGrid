@@ -126,35 +126,35 @@
   float: left;
   margin: auto 1.04166667% 20px 1.04166667%;
 }
+.response-grid .block .col-1,
+.response-grid .block .col-2,
+.response-grid .block .col-3,
+.response-grid .block .col-4,
+.response-grid .block .col-5,
+.response-grid .block .col-6,
+.response-grid .block .col-7,
+.response-grid .block .col-8,
+.response-grid .block .col-9,
+.response-grid .block .col-10,
+.response-grid .block .col-11 {
+  width: 97.91666667%;
+}
+.response-grid .block [class*="push-"] {
+  left: auto;
+}
+.response-grid .block [class*="pull-"] {
+  right: auto;
+}
 @media only screen and (max-width: 768px) and (min-width: 481px) {
-  .response-grid .reorder .col-1 {
+  .response-grid .middle-reorder .col-1 {
     width: 14.58333333%;
   }
-  .response-grid .reorder .col-2 {
+  .response-grid .middle-reorder .col-2 {
     width: 31.25%;
   }
-  .response-grid .reorder .col-3,
-  .response-grid .reorder .col-4 {
+  .response-grid .middle-reorder .col-3,
+  .response-grid .middle-reorder .col-4 {
     width: 47.91666667%;
-  }
-  .response-grid .block .col-1,
-  .response-grid .block .col-2,
-  .response-grid .block .col-3,
-  .response-grid .block .col-4,
-  .response-grid .block .col-5,
-  .response-grid .block .col-6,
-  .response-grid .block .col-7,
-  .response-grid .block .col-8,
-  .response-grid .block .col-9,
-  .response-grid .block .col-10,
-  .response-grid .block .col-11 {
-    width: 97.91666667%;
-  }
-  .response-grid .block [class*="push-"] {
-    left: auto;
-  }
-  .response-grid .block [class*="pull-"] {
-    right: auto;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -176,5 +176,128 @@
   }
   .response-grid [class*="pull-"] {
     right: auto;
+  }
+  .response-grid .small-reorder .col-1 {
+    width: 14.58333333%;
+  }
+  .response-grid .small-reorder .col-2 {
+    width: 31.25%;
+  }
+  .response-grid .small-reorder .col-3,
+  .response-grid .small-reorder .col-4 {
+    width: 47.91666667%;
+  }
+  .response-grid .small-stay .col-1 {
+    width: 6.25%;
+  }
+  .response-grid .small-stay .col-2 {
+    width: 14.58333333%;
+  }
+  .response-grid .small-stay .col-3 {
+    width: 22.91666667%;
+  }
+  .response-grid .small-stay .col-4 {
+    width: 31.25%;
+  }
+  .response-grid .small-stay .col-5 {
+    width: 39.58333333%;
+  }
+  .response-grid .small-stay .col-6 {
+    width: 47.91666667%;
+  }
+  .response-grid .small-stay .col-7 {
+    width: 56.25%;
+  }
+  .response-grid .small-stay .col-8 {
+    width: 64.58333333%;
+  }
+  .response-grid .small-stay .col-9 {
+    width: 72.91666667%;
+  }
+  .response-grid .small-stay .col-10 {
+    width: 81.25%;
+  }
+  .response-grid .small-stay .col-11 {
+    width: 89.58333333%;
+  }
+  .response-grid .small-stay .col-12 {
+    width: 97.91666667%;
+  }
+  .response-grid .small-stay .push-1 {
+    left: 8.33333333%;
+  }
+  .response-grid .small-stay .push-2 {
+    left: 16.66666667%;
+  }
+  .response-grid .small-stay .push-3 {
+    left: 25%;
+  }
+  .response-grid .small-stay .push-4 {
+    left: 33.33333333%;
+  }
+  .response-grid .small-stay .push-5 {
+    left: 41.66666667%;
+  }
+  .response-grid .small-stay .push-6 {
+    left: 50%;
+  }
+  .response-grid .small-stay .push-7 {
+    left: 58.33333333%;
+  }
+  .response-grid .small-stay .push-8 {
+    left: 66.66666667%;
+  }
+  .response-grid .small-stay .push-9 {
+    left: 75%;
+  }
+  .response-grid .small-stay .push-10 {
+    left: 83.33333333%;
+  }
+  .response-grid .small-stay .push-11 {
+    left: 91.66666667%;
+  }
+  .response-grid .small-stay .push-12 {
+    left: 100%;
+  }
+  .response-grid .small-stay .pull-1 {
+    right: 8.33333333%;
+  }
+  .response-grid .small-stay .pull-2 {
+    right: 16.66666667%;
+  }
+  .response-grid .small-stay .pull-3 {
+    right: 25%;
+  }
+  .response-grid .small-stay .pull-4 {
+    right: 33.33333333%;
+  }
+  .response-grid .small-stay .pull-5 {
+    right: 41.66666667%;
+  }
+  .response-grid .small-stay .pull-6 {
+    right: 50%;
+  }
+  .response-grid .small-stay .pull-7 {
+    right: 58.33333333%;
+  }
+  .response-grid .small-stay .pull-8 {
+    right: 66.66666667%;
+  }
+  .response-grid .small-stay .pull-9 {
+    right: 75%;
+  }
+  .response-grid .small-stay .pull-10 {
+    right: 83.33333333%;
+  }
+  .response-grid .small-stay .pull-11 {
+    right: 91.66666667%;
+  }
+  .response-grid .small-stay .pull-12 {
+    right: 100%;
+  }
+  .response-grid .small-stay [class*="col-"] {
+    position: relative;
+    float: left;
+    margin: auto 1.04166667% 20px 1.04166667%;
   }
 }

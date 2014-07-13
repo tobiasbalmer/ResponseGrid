@@ -66,20 +66,20 @@
         margin:auto (@base * 10%) 20px (@base * 10%);
     }
 
+    .block {    
+        .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 { width:@base * 940%; }
+        [class*="push-"] { left:auto; }
+        [class*="pull-"] { right:auto; }
+    }    
 }
 
 @media only screen and (max-width: @tablet-break) and (min-width: (@phone-break + 1)) {
 
     .response-grid {
-        .reorder {    
+        .middle-reorder {    
             .col-1 { width:@base * 140%; }
             .col-2 { width:@base * 300%; }
             .col-3, .col-4 { width:@base * 460%; }
-        }
-        .block {    
-            .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 { width:@base * 940%; }
-            [class*="push-"] { left:auto; }
-            [class*="pull-"] { right:auto; }
         }
     }
     
@@ -91,6 +91,58 @@
         .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 { width:@base * 940%; }
         [class*="push-"] { left:auto; }
         [class*="pull-"] { right:auto; }
+        
+        .small-reorder {    
+            .col-1 { width:@base * 140%; }
+            .col-2 { width:@base * 300%; }
+            .col-3, .col-4 { width:@base * 460%; }
+        }
+        .small-stay {  
+            .col-1 { width:@base * 60%; }
+            .col-2 { width:@base * 140%; }
+            .col-3 { width:@base * 220%; }
+            .col-4 { width:@base * 300%; }
+            .col-5 { width:@base * 380%; }
+            .col-6 { width:@base * 460%; }
+            .col-7 { width:@base * 540%; }
+            .col-8 { width:@base * 620%; }
+            .col-9 { width:@base * 700%; }
+            .col-10 { width:@base * 780%; }
+            .col-11 { width:@base * 860%; }
+            .col-12 { width:@base * 940%; }   
+
+            .push-1 { left:(@base * 60%) + (@base * 10%) * 2; }
+            .push-2 { left:(@base * 140%) + (@base * 10%) * 2; }
+            .push-3 { left:(@base * 220%) + (@base * 10%) * 2; }
+            .push-4 { left:(@base * 300%) + (@base * 10%) * 2; }
+            .push-5 { left:(@base * 380%) + (@base * 10%) * 2; }
+            .push-6 { left:(@base * 460%) + (@base * 10%) * 2; }
+            .push-7 { left:(@base * 540%) + (@base * 10%) * 2; }
+            .push-8 { left:(@base * 620%) + (@base * 10%) * 2; }
+            .push-9 { left:(@base * 700%) + (@base * 10%) * 2; }
+            .push-10 { left:(@base * 780%) + (@base * 10%) * 2; }
+            .push-11 { left:(@base * 860%) + (@base * 10%) * 2; }
+            .push-12 { left:(@base * 940%) + (@base * 10%) * 2; }
+
+            .pull-1 { right:(@base * 60%) + (@base * 10%) * 2; }
+            .pull-2 { right:(@base * 140%) + (@base * 10%) * 2; }
+            .pull-3 { right:(@base * 220%) + (@base * 10%) * 2; }
+            .pull-4 { right:(@base * 300%) + (@base * 10%) * 2; }
+            .pull-5 { right:(@base * 380%) + (@base * 10%) * 2; }
+            .pull-6 { right:(@base * 460%) + (@base * 10%) * 2; }
+            .pull-7 { right:(@base * 540%) + (@base * 10%) * 2; }
+            .pull-8 { right:(@base * 620%) + (@base * 10%) * 2; }
+            .pull-9 { right:(@base * 700%) + (@base * 10%) * 2; }
+            .pull-10 { right:(@base * 780%) + (@base * 10%) * 2; }
+            .pull-11 { right:(@base * 860%) + (@base * 10%) * 2; }
+            .pull-12 { right:(@base * 940%) + (@base * 10%) * 2; }
+
+            [class*="col-"] {
+                position:relative;
+                float:left;
+                margin:auto (@base * 10%) 20px (@base * 10%);
+            }
+        }
     }
     
 }
