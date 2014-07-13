@@ -44,3 +44,5 @@ For the tablet, there are 3 options.
     <div class="col-8"></div>
 </div>
 ```
+
+On the smartphone, all the cols become 100%. 
