@@ -125,6 +125,11 @@
   position: relative;
   float: left;
   margin: auto 1.04166667% 20px 1.04166667%;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 .response-grid .block .col-1,
 .response-grid .block .col-2,

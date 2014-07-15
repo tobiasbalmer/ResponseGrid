@@ -9,6 +9,16 @@
 
 @base:(100 / 960);
 
+@reorder-time:0.3s;
+
+.transition-duration(@time:@reorder-time;) {
+    -webkit-transition-duration:@time;
+    -moz-transition-duration:@time;
+    -o-transition-duration:@time;
+    -ms-transition-duration:@time;
+    transition-duration:@time;
+}
+
 .response-grid {
     .row {
         margin-bottom:20px;    
@@ -64,6 +74,7 @@
         position:relative;
         float:left;
         margin:auto (@base * 10%) 20px (@base * 10%);
+        .transition-duration();
     }
 
     .block {    
