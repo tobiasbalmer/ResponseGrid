@@ -64,3 +64,14 @@ On the smartphone, all the cols become 100%. But it's also possible to make the 
     <div class="col-3"></div>
 </div>
 ```
+
+It is also possible to hide columns or a full row (It is to remark that hiding elements on smaller viewports is a bad habbit). Just add the classes .middle-hidden or .small-hidden to the row or to the cols.
+
+```bash
+<div class="row small-hidden">
+    <div class="col-3 middle-hidden"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+</div>
+```
