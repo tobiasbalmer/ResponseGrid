@@ -14,7 +14,7 @@ This grid is based on 12 columns. Inside a div with the class row, there are the
 </div>
 ```
 
-to produce more space between the columns, or to change the visible position there are push and pulls.
+to produce more space between the columns, or to change the visible position there are `push` and `pull`.
 
 ```bash
 <div class="row">
@@ -26,8 +26,8 @@ to produce more space between the columns, or to change the visible position the
 For the tablet, there are 3 options. 
 
 - Without changes, the cols just shrink. 
-- With the class .middle-reorder on the row div, the cols 1/3 become 1/2, the 1/4 also 1/2, the 1/6 to 1/3 and the 1/12 to 1/6.
-- With the class .block, all cols become 100%.
+- With the class `middle-reorder` on the row div, the cols 1/3 become 1/2, the 1/4 also 1/2, the 1/6 to 1/3 and the 1/12 to 1/6.
+- With the class `block`, all cols become 100%.
 
 ```bash
 <div class="row middle-reorder">
@@ -45,7 +45,7 @@ For the tablet, there are 3 options.
 </div>
 ```
 
-On the smartphone, all the cols become 100%. But it's also possible to make the cols reorder, or even stay at the original width.
+On the smartphone, all the cols become 100%. But it's also possible to make the cols reorder, or even stay at the original width, with `small-reorder` and `small-stay`.
 
 ```bash
 <div class="row small-reorder">
@@ -65,7 +65,7 @@ On the smartphone, all the cols become 100%. But it's also possible to make the 
 </div>
 ```
 
-It is also possible to hide columns or a full row (It is to remark that hiding elements on smaller viewports is a bad habbit). Just add the classes .middle-hidden or .small-hidden to the row or to the cols.
+It is also possible to hide columns or a full row (It is to remark that hiding elements on smaller viewports is a bad habbit). Just add the classes `middle-hidden` or `small-hidden` to the row or to the cols.
 
 ```bash
 <div class="row small-hidden">
