@@ -83,7 +83,10 @@
         .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 { width:@base * 940%; }
         [class*="push-"] { left:auto; }
         [class*="pull-"] { right:auto; }
-    }    
+    } 
+    
+    .middle-hidden, 
+    .small-hidden { display:block; }
 }
 
 @media only screen and (max-width: @tablet-break) and (min-width: (@phone-break + 1)) {
@@ -93,6 +96,10 @@
             .col-1 { width:@base * 140%; }
             .col-2 { width:@base * 300%; }
             .col-3, .col-4 { width:@base * 460%; }
+        }
+        
+        .middle-hidden {
+            display:none;
         }
     }
     
@@ -155,6 +162,10 @@
                 float:left;
                 margin:auto (@base * 10%) 20px (@base * 10%);
             }
+        }
+        
+        .small-hidden {
+            display:none;
         }
     }
     
