@@ -5,7 +5,7 @@ For a long time, I always made for every project a responsive grid. And it was (
 
 Usage
 --------------------------------------
-This grid is based on 12 columns. Inside a div with the class row, there are these, labeled with .col- and the number.
+This grid is based on 12 columns. Inside a div with the class row, there are these, labeled with the class `col-` and the number how wide it should be.
 
 ```bash
 <div class="row">
