@@ -152,9 +152,8 @@
 .response-grid .block [class*="pull-"] {
   right: auto;
 }
-.response-grid .middle-hidden,
-.response-grid .small-hidden {
-  display: block;
+.response-grid .big-hidden {
+  display: none;
 }
 @media only screen and (max-width: 768px) and (min-width: 481px) {
   .response-grid .middle-reorder .col-1 {
@@ -186,6 +185,9 @@
   .response-grid .middle-reorder .pull-3,
   .response-grid .middle-reorder .pull-4 {
     right: 50%;
+  }
+  .response-grid .big-hidden {
+    display: block;
   }
   .response-grid .middle-hidden {
     display: none;
@@ -353,6 +355,9 @@
     position: relative;
     float: left;
     margin: auto 1.04166667% 20px 1.04166667%;
+  }
+  .response-grid .big-hidden {
+    display: block;
   }
   .response-grid .small-hidden {
     display: none;

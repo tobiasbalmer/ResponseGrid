@@ -85,8 +85,9 @@
         [class*="pull-"] { right:auto; }
     } 
     
-    .middle-hidden, 
-    .small-hidden { display:block; }
+    .big-hidden { 
+        display:none; 
+    }
 }
 
 @media only screen and (max-width: @tablet-break) and (min-width: (@phone-break + 1)) {
@@ -106,6 +107,9 @@
             .pull-3, .pull-4 { right:(@base * 460%) + (@base * 10%) * 2; }
         }
         
+        .big-hidden { 
+            display:block; 
+        }        
         .middle-hidden {
             display:none;
         }
@@ -179,7 +183,10 @@
                 margin:auto (@base * 10%) 20px (@base * 10%);
             }
         }
-        
+
+        .big-hidden { 
+            display:block; 
+        }        
         .small-hidden {
             display:none;
         }
