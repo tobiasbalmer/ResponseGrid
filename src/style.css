@@ -274,6 +274,7 @@
 }
 .response-grid .box {
   box-sizing: border-box;
+  width: 100%;
   /* boxpadding */
   padding: 20px;
 }
