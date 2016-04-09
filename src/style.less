@@ -1,3 +1,4 @@
+// out: style.css, compress: false, out: style.min.css, compress: true
 /**************************************/
 /*                                    */
 /*            ResponseGrid            */
@@ -16,9 +17,10 @@
 @sizes: lg, md, sm, xs; //reverse order for desktop first
 
 //************* grid start *************/
-.flex-container {
+.response-grid {
     display: flex; 
     flex-wrap: wrap; 
+    padding-top:@gutter;
     
     .for(@sizes, {    
         .col-loop(12, @value);                            
@@ -48,12 +50,16 @@
         box-sizing:border-box;
         /* boxpadding */
         padding:@boxpadding;
-    }                
+    }   
+    
+    .col-auto {
+        flex:1;
+    }
 
 }
 
 @media (max-width: @screen-xs-max) { 
-    .flex-container {
+    .response-grid {
                 
         .col-loop (12, xs); 
         
@@ -75,7 +81,7 @@
 
 }
 @media (min-width: (@screen-xs-max + 1)) and (max-width: @screen-sm-max) { 
-    .flex-container {
+    .response-grid {
                 
         .col-loop (12, sm);         
         
@@ -95,7 +101,7 @@
     }
 }
 @media (min-width: (@screen-sm-max + 1)) and (max-width: @screen-md-max) {
-    .flex-container {
+    .response-grid {
         
         .col-loop(12, md);            
         
@@ -115,7 +121,7 @@
     } 
 }
 @media (min-width: @screen-md-max) { 
-    .flex-container {
+    .response-grid {
                 
         .col-loop(12, lg);                     
         
