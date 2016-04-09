@@ -14,7 +14,7 @@
 @screen-sm-max:992px;
 @screen-md-max:1200px;
 
-@sizes: lg, md, sm, xs; //reverse order for desktop first
+@sizes:xs, sm, md, lg;
 
 //************* grid start *************/
 .response-grid {
@@ -45,6 +45,8 @@
         display: flex;    
         /* gutter and space bottom */
         padding:0 (@gutter / 2) @gutter;
+        
+        .transition-duration();
     }
     .box {
         box-sizing:border-box;

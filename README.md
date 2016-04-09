@@ -22,7 +22,7 @@ ResponseGrid is based on 12 columns. Inside a container with the class flex-cont
 </div>
 ```
 
-There are four breakpoints: `xs`, `sm`, `md`, `lg`. It uses the mobile-first principle (you can change that in the styles.less file, just reverse the order of @sizes), so if there isn't set a class for the bigger sizes, the styles of the smaller are applied. 
+There are four breakpoints: `xs`, `sm`, `md`, `lg`. It uses the mobile-first principle, so if there isn't set a class for the bigger sizes, the styles of the smaller are applied. 
 
 ```bash
 <div class="flex-container">
