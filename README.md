@@ -5,10 +5,10 @@ Simple to use grid, based on the flexible box layout module. You may wonder if i
 
 Usage
 --------------------------------------
-ResponseGrid is based on 12 columns. Inside a container with the class flex-container, there are divs, labeled with the class `col-`, what size and how many columns it should take (example: `col-xs-6`).
+ResponseGrid is based on 12 columns. Inside a container with the class `response-grid`, there are divs, labeled with the class `col-`, what size and how many columns it should take (example: `col-xs-6`).
 
 ```bash
-<div class="flex-container">
+<div class="response-grid">
     <div class="col-xs-6">
         <div class="box">
             Content
@@ -25,7 +25,7 @@ ResponseGrid is based on 12 columns. Inside a container with the class flex-cont
 There are four breakpoints: `xs`, `sm`, `md`, `lg`. It uses the mobile-first principle, so if there isn't set a class for the bigger sizes, the styles of the smaller are applied. 
 
 ```bash
-<div class="flex-container">
+<div class="response-grid">
     <div class="col-xs-4">
         <div class="box">
             Content
@@ -46,7 +46,7 @@ There are four breakpoints: `xs`, `sm`, `md`, `lg`. It uses the mobile-first pri
 
 Horizontal alignment of all the children. The options are `left`, `center` and `right` (default is left). 
 ```bash
-<div class="flex-container xs-align-center">
+<div class="response-grid xs-align-center">
     <div class="col-xs-4">
         <div class="box">
             Content
@@ -57,7 +57,7 @@ Horizontal alignment of all the children. The options are `left`, `center` and `
 
 Vertical alignment of all the children. The options are `top`, `middle` and `bottom` (default is stretch). 
 ```bash
-<div class="flex-container xs-valign-middle">
+<div class="response-grid xs-valign-middle">
     <div class="col-xs-4">
         <div class="box">
             Content
@@ -68,7 +68,7 @@ Vertical alignment of all the children. The options are `top`, `middle` and `bot
 
 Vertical alignment of one single child with the options `top`, `middle` and `bottom` (default is stretch).
 ```bash
-<div class="flex-container">
+<div class="response-grid">
     <div class="col-xs-4">
         <div class="box xs-valign-middle">
             Content
@@ -79,7 +79,7 @@ Vertical alignment of one single child with the options `top`, `middle` and `bot
 
 You don't know how many columns you need? No problem, there's a class for that. Use `col-auto` and it just align all of them in a row.
 ```bash
-<div class="flex-container">
+<div class="response-grid">
     <div class="col-auto">
         <div class="box">
             Content
