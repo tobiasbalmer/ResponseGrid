@@ -4,77 +4,167 @@
 /*                                    */
 /**************************************/
 
-/************ basic config ************/
-@gutter: 50px;
-
-
+//************ basic config ************/
+@gutter: 30px;
+@boxpadding: 20px;
 @reorder-time:0.3s;
 
-/************* grid start *************/
+@screen-xs-max:768px;
+@screen-sm-max:992px;
+@screen-md-max:1200px;
+
+@sizes: lg, md, sm, xs; //reverse order for desktop first
+
+//************* grid start *************/
 .flex-container {
-    /*height:1200px;*/
     display: flex; 
-    /* flex-direction: row, row-reverse, column, column-reverse */                 
-    flex-wrap: wrap; /* nowrap, wrap-reverse; */
-    /* justify-content: flex-start | flex-end | center | space-between | space-around; */
-    /* align-items:stretch; flex-start | flex-end | center | baseline | stretch */   
-    /* align-content: space-between; flex-start | flex-end | center | space-between | space-around | stretch */   
+    flex-wrap: wrap; 
+    
+    .for(@sizes, {    
+        .col-loop(12, @value);                            
+        
+        &.@{value}-align-left { justify-content: flex-start; }
+        &.@{value}-align-center { justify-content: center; }
+        &.@{value}-align-right { justify-content: flex-end;}
+
+        &.@{value}-valign-top { align-items: flex-start; }
+        &.@{value}-valign-middle { align-items: center; }
+        &.@{value}-valign-bottom { align-items: flex-end; }  
+        
+        .box {
+            &.@{value}-valign-top { align-self: flex-start; }
+            &.@{value}-valign-middle { align-self: center; }
+            &.@{value}-valign-bottom { align-self: flex-end; }            
+        }
+    });     
+ 
+    [class*='col-'] {
+        box-sizing:border-box;
+        display: flex;    
+        /* gutter and space bottom */
+        padding:0 (@gutter / 2) @gutter;
+    }
+    .box {
+        box-sizing:border-box;
+        /* boxpadding */
+        padding:@boxpadding;
+    }                
+
 }
 
-[class*='col-'] {
-    box-sizing:border-box;
-    display: flex;    
-    padding:0 (@gutter / 2); 
-    padding-bottom: @gutter;
-}
-.box {
-    box-sizing:border-box;
-    padding:20px; /*** boxpadding: 20px ***/
-    /* align-self: auto | flex-start | flex-end | center | baseline | stretch; */ 
-}            
+@media (max-width: @screen-xs-max) { 
+    .flex-container {
+                
+        .col-loop (12, xs); 
+        
+        &.xs-align-left { justify-content: flex-start; }
+        &.xs-align-center { justify-content: center; }
+        &.xs-align-right { justify-content: flex-end;}
 
-.col-1 {
-    width:8.3333333333%;
-}
-.col-2 {
-    width:16.666666667%;
-}
-.col-3 {
-    width:25%;                
-}
-.col-4 {
-    width:33.333333333%;                
-}
-.col-5 {
-    width:41.666666667%;                                
-}
-.col-6 {
-    width:50%;                                
-}
-.col-7 {
-    width:58.333333333%;                                
-}            
-.col-8 {
-    width:66.666666666%;                                
-}  
-.col-9 {
-    width:75%;                                
-}
-.col-10 {
-    width:83.333333333%;                                
-}
-.col-11 {
-    width:91.666666666%;                                
-}
-.col-12 {
-    width:100%;                                
-}    
+        &.xs-valign-top { align-items: flex-start; }
+        &.xs-valign-middle { align-items: center; }
+        &.xs-valign-bottom { align-items: flex-end; }  
+        
+        .box {
+            &.xs-valign-top { align-self: flex-start; }
+            &.xs-valign-middle { align-self: center; }
+            &.xs-valign-bottom { align-self: flex-end; }            
+        }        
+        
+    }         
 
-/*** miscellaneous ***/
+}
+@media (min-width: (@screen-xs-max + 1)) and (max-width: @screen-sm-max) { 
+    .flex-container {
+                
+        .col-loop (12, sm);         
+        
+        &.sm-align-left { justify-content: flex-start; }
+        &.sm-align-center { justify-content: center; }
+        &.sm-align-right { justify-content: flex-end;}
+
+        &.sm-valign-top { align-items: flex-start; }
+        &.sm-valign-middle { align-items: center; }
+        &.sm-valign-bottom { align-items: flex-end; }  
+        
+        .box {
+            &.sm-valign-top { align-self: flex-start; }
+            &.sm-valign-middle { align-self: center; }
+            &.sm-valign-bottom { align-self: flex-end; }            
+        }         
+    }
+}
+@media (min-width: (@screen-sm-max + 1)) and (max-width: @screen-md-max) {
+    .flex-container {
+        
+        .col-loop(12, md);            
+        
+        &.md-align-left { justify-content: flex-start; }
+        &.md-align-center { justify-content: center; }
+        &.md-align-right { justify-content: flex-end;}
+
+        &.md-valign-top { align-items: flex-start; }
+        &.md-valign-middle { align-items: center; }
+        &.md-valign-bottom { align-items: flex-end; }  
+        
+        .box {
+            &.md-valign-top { align-self: flex-start; }
+            &.md-valign-middle { align-self: center; }
+            &.md-valign-bottom { align-self: flex-end; }            
+        }        
+    } 
+}
+@media (min-width: @screen-md-max) { 
+    .flex-container {
+                
+        .col-loop(12, lg);                     
+        
+        &.lg-align-left { justify-content: flex-start; }
+        &.lg-align-center { justify-content: center; }
+        &.lg-align-right { justify-content: flex-end;}
+
+        &.lg-valign-top { align-items: flex-start; }
+        &.lg-valign-middle { align-items: center; }
+        &.lg-valign-bottom { align-items: flex-end; }  
+        
+        .box {
+            &.lg-valign-top { align-self: flex-start; }
+            &.lg-valign-middle { align-self: center; }
+            &.lg-valign-bottom { align-self: flex-end; }            
+        }         
+    }
+}
+
+//*** miscellaneous ***/
 .transition-duration(@time:@reorder-time;) {
     -webkit-transition-duration:@time;
     -moz-transition-duration:@time;
     -o-transition-duration:@time;
     -ms-transition-duration:@time;
     transition-duration:@time;
+}
+
+//* less loop through array */
+.for(@list, @code) {
+    & {
+        .loop(@i:1) when (@i =< length(@list)) {
+            @value: extract(@list, @i);
+
+            @code();
+
+            .loop(@i + 1);
+        }
+
+        .loop();
+    }
+}
+
+//* less loop for the columns */
+.col-loop (@i, @size) when (@i > 0) {
+
+    .col-@{size}-@{i} {
+        flex-basis:8.3333333333% * @i; 
+    };
+
+    .col-loop( @i - 1, @size ); // iterate.    
 }
